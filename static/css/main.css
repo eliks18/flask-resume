@@ -1,0 +1,97 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+/*----- NAVBAR -----*/
+nav.navbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: #B3AD51;
+	min-height: 150px;
+	border-bottom: solid 3px;
+	border-color: #D9D6A8;
+}
+ul.nav-links {
+	margin: 15px;
+	padding: 15px;
+	display: flex;
+	align-self: center;
+	list-style: none;
+}
+li.nav-link {
+	color: #fff;
+	font-size: 21px;
+	font-weight: bold;
+}
+.title {
+	text-align: center;
+}
+p.subtitle {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: solid 1px;
+	font-size: 18px;
+}
+/*----- CONTENT -----*/
+.header {
+	display: flex;
+	justify-content: center;
+	margin-top: -106px;
+}
+img.main-photo {
+	border-radius: 50%;
+	border: solid 3px;
+	border-color: #D9D6A8;
+	max-width: 200px;
+}
+.container {
+	display: flex;
+	margin-top: -100px;
+	justify-content: space-between;
+}
+.box-info {
+	color: #706C33;
+	margin: 5px;
+	padding: 15px;
+	width: 30%;
+}
+.info-title {
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: solid 2px;
+	border-color: #706C33;
+}
+.box-info.middle {
+	margin-top: 100px;
+}
+/*----- CARDS -----*/
+.card {
+	padding: 5px;
+	margin-bottom: 10px;
+	border-bottom: dotted 1px;
+}
+/*---------- PROFESSIONAL/EDUCATION -----*/
+.job-name {
+	font-weight: bold;
+	font-size: 18px;
+	color: #595629;
+}
+.job-title {
+	font-weight: bold;
+	font-size: 16px;
+	display: flex;
+	color: #86823D;
+	justify-content: space-between;
+}
+.job-years {
+	font-style: italic;
+	font-weight: normal;
+	text-align: right;
+}
+.job-description {
+	color: #2D2B14;
+	padding: 15px 0px 15px 0px;
+	text-align: justify;
+}
+/*---------- SKILLS -----*/

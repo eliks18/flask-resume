@@ -1,19 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Eliezer Erosa | Resume</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+	<meta charset="UTF-8">
+	<title>Eliezer Erosa | Resume</title>
+	<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"> -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-    <div class="container-fluid">
-    	<div class="row">
-    		<div class="col-md-12">
-    			
-    		</div>
-    	</div>
-    </div>
-    
-    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	<main>
+		<!-- NAVBAR START -->
+		<nav class="navbar">
+			<ul class="nav-links">
+				<li class="nav-link title">Eliezer Erosa G.<p class="subtitle">Analista jr. Desarrollador</p></li>
+			</ul>
+			<ul class="nav-links">
+				<li class="nav-link">link1</li>
+				<li class="nav-link">link2</li>
+			</ul>
+		</nav>
+		<!-- NAVBAR END -->
+		<!-- CONTENT START -->
+			<header class="header">
+				<img src="{{ url_for('static', filename='img/main.png') }}" class="main-photo">
+			</header>
+			<section class="container">
+				<section class="box-info">
+					<!-- PROFESSIONAL INFO -->
+					<h1 class="info-title">professional info</h1>
+					<div class="card">
+						<div class="job-name">Mi Banco Autofin</div>
+						<div class="job-title">Analista Jr. Desarrollo <span class="job-years">Feb. 2019 - Actualidad</span></div>
+						<div class="job-description">Análisis, diseño y desarrollo de software utilizando PHP (Laravel) y Python (Django).</div>
+					</div>
+					<div class="card">
+						<div class="job-name">ITELDSA</div>
+						<div class="job-title">Programador Web <span class="job-years">Ago. 2016 - Ene. 2018</span></div>
+						<div class="job-description">Desarrollo de sistema en PHP (Codeigniter), Javascript (Jquery) y CSS (Bootstrap) para administrar los procesos operativos de la empresa.</div>
+					</div>
+					<div class="card">
+						<div class="job-name">Jefatura de Ingeniería en Computación, ESIME Culhuacan</div>
+						<div class="job-title">Programador Web <span class="job-years">Jun. 2015 - Ene. 2016</span></div>
+						<div class="job-description">Desarrollo de aplicaciones web para la ESIME Unidad Culhuacan utilizando herramientas como javaScript (Jquery), CSS (Bootstrap) y PHP (Codeigniter y Zend Framework).</div>
+					</div>
+					<!-- END PROFESSIONAL INFO -->
+					<!-- EDUCATION INFO -->
+					<h1 class="info-title">Education info</h1>
+					<div class="card">
+						<div class="job-name">Maestría en Ciencias de Ingeniería en Microelectrónica</div>
+						<div class="job-title">Sección de Estudios de Posgrado e Investigación, ESIME Culhuacan</div>
+						<span class="job-years">Ago. 2016 - Oct. 2019</span>
+						<div class="job-description">Tesis: Modelado de epidemias por gusanos informáticos utilizando autómatas celulares determinísticos de dos dimensiones.</div>
+					</div>
+					<div class="card">
+						<div class="job-name">Ingeniería en Computación</div>
+						<div class="job-title">Escuela Superior de Ingeniería Mecánica y Eléctrica, Unidad Culhuacan</div>
+						<span class="job-years">Ago. 2016 - Oct. 2019</span>
+						<div class="job-description">Proyecto: Aplicación móvil auxiliar para evaluación de habilidades de lectura en personas con síndrome de Down.</div>
+					</div>
+					<!-- END EDUCATION INFO -->
+				</section>
+				<section class="box-info middle">
+					<h1 class="info-title">skills info</h1>
+				</section>
+				<section class="box-info">
+					<h1 class="info-title">personal info</h1>
+				</section>
+			</section>
+		<!-- CONTENT END -->
+	</main>
+	<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script> -->
 </body>
 </html>
