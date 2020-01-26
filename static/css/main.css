@@ -95,3 +95,33 @@ img.main-photo {
 	text-align: justify;
 }
 /*---------- SKILLS -----*/
+
+.row {
+	margin-bottom: 5px;
+	display: flex;
+	width: 100%;
+}
+.col2 {
+	margin:0px 2px 0px 2px;
+	box-sizing: inherit;
+	width: 50%;
+}
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+.table th,td {
+	border: 1px solid;
+	padding: 2px;
+	border-top: 0px;
+	border-color: #86823D;
+}
+.table-title {
+	color: #D9D6A8;
+	background-color: #706C33;
+}
+.table-subtitle {
+	background-color: #86823D;
+	color: white;
+}

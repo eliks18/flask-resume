@@ -25,107 +25,176 @@
 		</nav>
 		<!-- NAVBAR END -->
 		<!-- CONTENT START -->
-			<header class="header">
-				<img src="{{ url_for('static', filename='img/main.png') }}" class="main-photo">
-			</header>
-			<section class="container">
-				<section class="box-info">
-					<!-- PROFESSIONAL INFO -->
-					<h1 class="info-title">professional info</h1>
-					<div class="card">
-						<div class="job-name">Mi Banco Autofin</div>
-						<div class="job-title">Analista Jr. Desarrollo <span class="job-years">Feb. 2019 - Actualidad</span></div>
-						<div class="job-description">Análisis, diseño y desarrollo de software utilizando PHP (Laravel) y Python (Django).</div>
-					</div>
-					<div class="card">
-						<div class="job-name">ITELDSA</div>
-						<div class="job-title">Programador Web <span class="job-years">Ago. 2016 - Ene. 2018</span></div>
-						<div class="job-description">Desarrollo de sistema en PHP (Codeigniter), Javascript (Jquery) y CSS (Bootstrap) para administrar los procesos operativos de la empresa.</div>
-					</div>
-					<div class="card">
-						<div class="job-name">Jefatura de Ingeniería en Computación, ESIME Culhuacan</div>
-						<div class="job-title">Programador Web <span class="job-years">Jun. 2015 - Ene. 2016</span></div>
-						<div class="job-description">Desarrollo de aplicaciones web para la ESIME Unidad Culhuacan utilizando herramientas como javaScript (Jquery), CSS (Bootstrap) y PHP (Codeigniter y Zend Framework).</div>
-					</div>
-					<!-- END PROFESSIONAL INFO -->
-				</section>
-				<section class="box-info middle">
-					<h1 class="info-title">skills info</h1>
-					<h5>Backend</h5>
-					<ul>
-						<li>PHP</li>
-						<ul>
-							<li>Laravel</li>
-							<li>CodeIgniter</li>
-						</ul>
-						<li>Python</li>
-						<ul>
-							<li>Django</li>
-							<li>Flask</li>
-						</ul>
-						<li>Javascript</li>
-						<ul>
-							<li>JQuery</li>
-						</ul>
-						<li>C</li>
-					</ul>
-					<h5>Frontend</h5>
-					<ul>
-						<li>CSS</li>
-						<ul>
-							<li>Bootstrap</li>
-							<li>Materialize</li>
-						</ul>
-					</ul>
-					<h5>Bases de Datos</h5>
-					<ul>
-						<li>MySQL/MariaDB</li>
-						<li>SQL Server</li>
-					</ul>
-					<h5>Idiomas</h5>
-					<ul>
-						<li>Español (nativo)</li>
-						<li>Inglés</li>
-					</ul>
-					<h5>Otros</h5>
-					<ul>
-						<li>Microsoft Office</li>
-						<ul>
-							<li>Word</li>
-							<li>Excel</li>
-							<li>Power Point</li>
-						</ul>
-						<li>Control de versiones</li>
-						<ul>
-							<li>Git</li>
-						</ul>
-						<li>SCRUM</li>
-					</ul>
-				</section>
-				<section class="box-info">
-					<!-- EDUCATION INFO -->
-					<h1 class="info-title">Education info</h1>
-					<div class="card">
-						<div class="job-name">Maestría en Ciencias de Ingeniería en Microelectrónica</div>
-						<div class="job-title">Sección de Estudios de Posgrado e Investigación, ESIME Culhuacan</div>
-						<span class="job-years">Ago. 2016 - Oct. 2019</span>
-						<div class="job-description">Tesis: Modelado de epidemias por gusanos informáticos utilizando autómatas celulares determinísticos de dos dimensiones.</div>
-					</div>
-					<div class="card">
-						<div class="job-name">Ingeniería en Computación</div>
-						<div class="job-title">Escuela Superior de Ingeniería Mecánica y Eléctrica, Unidad Culhuacan</div>
-						<span class="job-years">Ago. 2011 - Dic. 2015</span>
-						<div class="job-description">Proyecto: Aplicación móvil auxiliar para evaluación de habilidades de lectura en personas con síndrome de Down.</div>
-					</div>
-					<!-- END EDUCATION INFO -->
-					<!-- CONTACT INFO -->
-					<h1 class="info-title">Contact info</h1>
-					<p>email: mail@to.com</p>
-					<p>tel: 55-55-55-55-55</p>
-					<p>city: CDMX, Mexico</p>
-					<!-- END CONTACT INFO -->
-				</section>
+		<header class="header">
+			<img src="{{ url_for('static', filename='img/main.png') }}" class="main-photo">
+		</header>
+		<section class="container">
+			<section class="box-info">
+				<!-- PROFESSIONAL INFO -->
+				<h1 class="info-title">professional info</h1>
+				<div class="card">
+					<div class="job-name">Mi Banco Autofin</div>
+					<div class="job-title">Analista Jr. Desarrollo <span class="job-years">Feb. 2019 - Actualidad</span></div>
+					<div class="job-description">Análisis, diseño y desarrollo de software utilizando PHP (Laravel) y Python (Django).</div>
+				</div>
+				<div class="card">
+					<div class="job-name">ITELDSA</div>
+					<div class="job-title">Programador Web <span class="job-years">Ago. 2016 - Ene. 2018</span></div>
+					<div class="job-description">Desarrollo de sistema en PHP (Codeigniter), Javascript (Jquery) y CSS (Bootstrap) para administrar los procesos operativos de la empresa.</div>
+				</div>
+				<div class="card">
+					<div class="job-name">Jefatura de Ingeniería en Computación, ESIME Culhuacan</div>
+					<div class="job-title">Programador Web <span class="job-years">Jun. 2015 - Ene. 2016</span></div>
+					<div class="job-description">Desarrollo de aplicaciones web para la ESIME Unidad Culhuacan utilizando herramientas como javaScript (Jquery), CSS (Bootstrap) y PHP (Codeigniter y Zend Framework).</div>
+				</div>
+				<!-- END PROFESSIONAL INFO -->
 			</section>
+			<section class="box-info middle">
+				<h1 class="info-title">skills info</h1>
+				<div class="row">
+					<div class="col2">
+						<table class="table" cellspacing="0">
+							<thead class="table-title">
+								<tr>
+									<th colspan="2">BACKEND</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th class="table-subtitle" rowspan="2">PHP</th>
+									<td>Laravel</td>
+								</tr>
+								<tr>
+									<td>Codeigniter</td>
+								</tr>
+								<tr>
+									<th class="table-subtitle" rowspan="2">Python</th>
+									<td>Django</td>
+								</tr>
+								<tr>
+									<td>Flask</td>
+								</tr>
+								<tr>
+									<th class="table-subtitle" rowspan="2">C</th>
+									<td>-</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col2">
+						<table class="table">
+							<thead class="table-title">
+								<th colspan="2">FRONTEND</th>
+							</thead>
+							<tbody>
+								<tr>
+									<th class="table-subtitle">JavaScript</th>
+									<td>Jquery</td>
+								</tr>
+								<tr>
+									<th class="table-subtitle" rowspan="2">CSS</th>
+									<td>Bootstrap</td>
+								</tr>
+								<tr>
+									<td>Materialize</td>
+								</tr>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col2">
+						<table class="table" cellspacing="0">
+							<thead class="table-title">
+								<tr>
+									<th colspan="2">BASES DE DATOS</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th class="table-subtitle" rowspan="3">SQL</th>
+									<td>MySQL</td>
+								</tr>
+								<tr>
+									<td>MAriaDB</td>
+								</tr>
+								<tr>
+									<td>PostgreSQL</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col2">
+						<table class="table" cellspacing="0">
+							<thead class="table-title">
+								<tr>
+									<th>IDIOMAS</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Español (Nativo)</td>
+								</tr>
+								<tr>
+									<td>Inglés</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col2">
+						<table class="table" cellspacing="0">
+							<thead class="table-title">
+								<tr>
+									<th colspan="2">OTROS</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th class="table-subtitle" rowspan="3">Office</th>
+									<td>Excel</td>
+								</tr>
+								<tr>
+									<td>Word</td>
+								</tr>
+								<tr>
+									<td>PowerPoint</td>
+								</tr>
+								<tr>
+									<td colspan="2">Git</td>
+								</tr>
+								<tr>
+									<td colspan="2">SCRUM</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+			<section class="box-info">
+				<!-- EDUCATION INFO -->
+				<h1 class="info-title">Education info</h1>
+				<div class="card">
+					<div class="job-name">Maestría en Ciencias de Ingeniería en Microelectrónica</div>
+					<div class="job-title">Sección de Estudios de Posgrado e Investigación, ESIME Culhuacan</div>
+					<span class="job-years">Ago. 2016 - Oct. 2019</span>
+					<div class="job-description">Tesis: Modelado de epidemias por gusanos informáticos utilizando autómatas celulares determinísticos de dos dimensiones.</div>
+				</div>
+				<div class="card">
+					<div class="job-name">Ingeniería en Computación</div>
+					<div class="job-title">Escuela Superior de Ingeniería Mecánica y Eléctrica, Unidad Culhuacan</div>
+					<span class="job-years">Ago. 2011 - Dic. 2015</span>
+					<div class="job-description">Proyecto: Aplicación móvil auxiliar para evaluación de habilidades de lectura en personas con síndrome de Down.</div>
+				</div>
+				<!-- END EDUCATION INFO -->
+				<!-- CONTACT INFO -->
+				<h1 class="info-title">Contact info</h1>
+				<p>email: mail@to.com</p>
+				<p>tel: 55-55-55-55-55</p>
+				<p>city: CDMX, Mexico</p>
+				<!-- END CONTACT INFO -->
+			</section>
+		</section>
 		<!-- CONTENT END -->
 	</main>
 	<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script> -->
